@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <!--<header><h1>Employee Manager</h1></header>-->
+  <div id="sidebar">
+      <a href="index.html"><i class="far fa-address-book big-icon"></i></a>
+      <p>SIMPLICITY</p>
+      <nav>     
+          <ul>
+            <li><a id='print' href='#'>Print</a></li>
+            <li><a id='verify' href='#'>Verify</a></li>
+            <li><a id='lookup' href='#'>Lookup</a></li>
+            <li><a id='contains' href='#'>Contains</a></li>
+            <li><a id='update' href='#'>Update</a></li>
+            <li><a id='add' href='#'>Add</a></li>
+            <li><a id='delete' href='#'>Delete</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div id="main">
+    <section id="welcome" class="mainSection">
+      <h1>WELCOME TO <span style="color:yellow;">SIMPLICITY</span></h1><br/><br/><br/>
+      <h4>The Minimalist Directory.</h4>
+
+    </section>
+    
+    <section id='inputFields'>     
+      <h3 id='title' class="hide">The Minimalist Directory.</h3><br/>  
+        <div id="empName" class="mainSection hide">
+        
+        Name:<input id='inputName' placeholder="Enter Employee Name" /><button id="btnVerify" class='searchButton hide'><i class="fas fa-search sm-icon"></i> </button>
+        </div>
+        <div id="empAddUpdate" class="mainSection hide">
+            Number:<input id='officeNum' placeholder="Enter Office Number" /><br />
+            Phone:<input id='phoneNum' placeholder="Enter Phone Number" />
+        </div>
+    </section>
+
+    <section id='contentVerify' class='mainSection hide'>      
+      <!-- <button id="btnVerify">Verify</button> -->
+    </section>
+
+    <section id='contentLookup' class='mainSection hide'>
+      <button id="btnLookup">Lookup</button>
+    </section>
+
+    <section id='contentContains' class='mainSection hide'>
+      <button id="btnContains">Contains</button>
+    </section>
+
+    <section id='contentUpdate' class='mainSection hide'>
+      <button id="btnUpdate">Update</button>
+    </section>
+
+    <section id='contentAdd' class='mainSection hide'>
+      <button id="btnAdd">Add</button>
+    </section>
+
+    <section id='contentDelete' class='mainSection hide'>
+      <button id="btnDelete">Delete</button>
+    </section>
+    <br />
+    <section id="resultBoard">
+    </section>
+
+  </div>
+  <script src="dom.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
